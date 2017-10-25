@@ -5,7 +5,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER FUNCTION [dbo].[ufnGetReferenciaFacturaString](@CurrentBase varchar(50), @idEmpresa varchar(2), @idSucursal varchar(2))  
+CREATE FUNCTION [dbo].[ufnGetReferenciaFacturaString](@CurrentBase varchar(50), @idEmpresa varchar(2), @idSucursal varchar(2))  
 RETURNS varchar(max)   
 AS   
 -- Returns the stock level for the product.  
